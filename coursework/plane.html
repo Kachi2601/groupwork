@@ -1,0 +1,161 @@
+<style>
+    table {
+background-color: #FFE5B4;
+ border: 5px;
+ border-style: solid;
+ border-color: black; 
+
+}
+th,td{
+ border: 5px;
+ border-style: solid;
+ border-color: black;
+
+}
+.flex{
+    text-align: center;
+    font-size: 44px
+}
+  .smaller-image {
+width: 75px;
+}
+.border {
+border-width: 10px;
+border-style: solid;
+border-color: black;
+border-radius: 50%;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+body{
+    background-color: #ffbe98;
+}
+
+</style>
+<html>
+<body>
+    <button onclick="history.back()"> Go Back </button>
+            <img class= "border smaller-image"src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlitIdE0mMmrWSRBsUa2acSJg75MsU0l8A_w&usqp=CAU" alt="Plane icon" style="width:15%;">
+    <h1 class="flex">PLANE SCHEDULES</h1>
+
+    <table>
+        <th>Depart-Destination</th>
+        <th><b>Departure Time</b></th>
+        <th><b>Arrival time</b></th>
+        <th><b>Cost-£</b></th>
+        <tr>
+            <th>Manchester-Bristol</td>
+            <th>12:00</td>
+            <th>12:30</td>
+            <th>20</td>
+        </tr>
+            <th>London- Glasgow</td>
+            <th>12:00</td>
+            <th>13:00</td>
+            <th>30</td>
+        </tr>
+            <th>Bristol- London</td>
+            <th>13:00</td>
+            <th>13:30</td>
+            <th>15</td>
+        </tr>
+          <th>Glasgow- Cardiff</td>
+            <th>13:30</td>
+            <th>14:30</td>
+            <th>35</td>
+        </tr>
+          <th>Bristol- Manchester</td>
+            <th>13:00</td>
+            <th>13:30</td>
+            <th>20</td>
+        </tr>
+          <th>Glasgow -London</td>
+            <th>14:30</td>
+            <th>15:30</td>
+            <th>30</td>
+        </tr>
+          <th>London- Bristol</td>
+            <th>13:00</td>
+            <th>13:30</td>
+            <th>15</td>
+        </tr>
+          <th>Cardiff -Glasgow</td>
+            <th>15:00</td>
+            <th>16:00</td>
+            <th>35</td>
+        </tr>
+    </table>
+
+        <h2>PLEASE FILL THE FORM BELOW TO BOOK A TICKET:</h2>
+    <form   action="air.py" method="POST">
+        <table>
+            <tr>
+                <td>
+                    Name:
+                </td>
+                <td>
+                    <input type="text" name="">
+                </td>
+            </tr>
+            <td>
+                Email:
+            </td>
+            <td>
+                <input type="Email" name="">
+            </td>
+            
+        </table>
+    </form>
+
+    
+    <form action="/action_page.php">
+<label for="cars">Choose Depart-Destination:</label>
+<select name="cars" id="cars">
+  <option value=" "> </option>
+<option value="Manchester-Bristol">Manchester-Bristol</option>
+<option value="London- Glasgow	">London- Glasgow	</option>
+<option value="Bristol- London	">Bristol- London	</option>
+<option value="Glasgow- Cardiff	">Glasgow- Cardiff	</option>
+<option value="Bristol- Manchester	">Bristol- Manchester	</option>
+<option value="Glasgow -London		">Glasgow -London		</option>
+<option value="London- Bristol		">London- Bristol		</option>
+<option value="Cardiff -Glasgow		">Cardiff -Glasgow		</option>
+</select>
+    <br>
+        <br><br>
+    <form>
+        <table>
+        <th>Underaged Passengers</th>
+            <tr>
+                <td>
+                    Children above 12:
+                </td>
+                <td>
+                    <input type="text" name="">
+                </td>
+            </tr>
+            <td>
+                Children under 12:
+            </td>
+            <td>
+                <input type="Children_under_2" name="">
+            </td>
+            <tr>
+                <td>
+                Children under 2:
+            </td>
+            <td>
+                <input type="Children_under_2" name="">
+            </td>				
+            </tr>
+        </table>
+    </form>
+
+
+<br><br>
+<input type="submit" value="Submit">
+</form>
+<br><br>
+</body>
+</html>
